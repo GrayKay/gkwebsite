@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "GraysonKhalifa.css">
+    </head>
+    <body>
+        <div class = "NavBar">
+            <a class = "NavBarItem" id = "home" href = "GraysonKhalifaMain.html"><img src="c:\Users\grays\Documents\Untitled(3).png"></a>
+            <a class = "NavBarItem" id = "spacer"></a>
+            <a class = "NavBarItem" href = "GraysonKhalifaHobbies.html">Hobbies</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaClasses.html">Classes</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaAchievements.html">Achievements</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaQuestions.html">Questions</a>
+        </div>
+        <div class = "banner"><img src = "c:\Users\grays\Documents\WebProgramming\GraysonKhalifaQuestionsBanner.jpg"></div>
+        <hr>
+        <div class = "content">
+            <div class = "wrapper">
+                <h1>Click the question to change it!</h1>
+                <button type = "button" id = "RandQuest">If you could change one thing about the world, what would it be and why?</button>
+                <label for = "Name">Name:</label>
+                <input type = "text" id = "Name" name = "Name">
+                <label for = "Ans">Answer:</label>
+                <textarea type = "text" id = "Ans" name = "ans"></textarea>
+                <button type = "button" id = "sbmt" onclick = "alert('Your response has been submited. Thank You!')">Submit Response</button>
+            </div>
+        </div>
+    </body>
+    <script>
+        let r = document.getElementById("RandQuest");
+        r.addEventListener("click", function(){
+            this.innerHTML = "";
+            let nq = ["What is the most valuable lesson life has taught you so far?", "If time and money were not an issue, what passion project would you pursue?", "What is one experience that completely changed your perspective on something?", "How do you define success, and what does it look like in your life?", "If you could change one thing about the world, what would it be and why?"]
+            let randomIndex = Math.floor(Math.random() * nq.length);
+            this.innerHTML = nq[randomIndex];
+        })
+    </script>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "GraysonKhalifa.css">
+    </head>
+    <body>
+        <div class = "NavBar">
+            <a class = "NavBarItem" id = "home" href = "GraysonKhalifaMain.html"><img src="c:\Users\grays\Documents\Untitled(3).png"></a>
+            <a class = "NavBarItem" id = "spacer"></a>
+            <a class = "NavBarItem" href = "GraysonKhalifaHobbies.html">Hobbies</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaClasses.html">Classes</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaAchievements.html">Achievements</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaQuestions.html">Questions</a>
+        </div>
+        <div class = "banner"><img src = "c:\Users\grays\Documents\WebProgramming\GraysonKhalifaAchievementsBanner.jpg"></div>
+        <hr>
+        <div class = "content">
+            <div class = "wrapper">
+                <div class = "row">
+                    <div class = "card AchievementsCard-FrontI">
+                        <img src = "">
+                        <h1>Varsity Letter x2 (Swimming, Cross Country)</h1>
+                    </div>
+                    <div class = "cardII AchievementsCard-FrontI">
+                        <img src = "">
+                        <h1>Publishing My First Game</h1>
+                    </div>
+                    <div class = "cardIII AchievementsCard-FrontI">
+                        <img src = "">
+                        <h1>Making CIAC States in the 500 Freestyle</h1>
+                    </div>
+                    <div class = "cardIIII AchievementsCard-FrontI">
+                        <img src = "">
+                        <h1>Getting an A+ on the Web Final👍</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+         let cards = document.getElementsByClassName("card");
+        for(let i = 0; i < cards.length; i++){
+            let card = cards[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("AchievementsCard-Front");
+                this.classList.add("AchievementsCard-Back");
+                this.innerHTML = "";
+                let img = document.createElement("div");
+                img.innerHTML = "<img class = Aimg src='IMG_4513.JPEG'>"
+                this.appendChild(img);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("AchievementsCard-Back");
+                this.classList.add("AchievementsCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Varsity Letter x2 (Swimming, Cross Country)";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsII = document.getElementsByClassName("cardII");
+        for(let i = 0; i < cardsII.length; i++){
+            let card = cardsII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("AchievementsCard-Front");
+                this.classList.add("AchievementsCard-Back");
+                this.innerHTML = "";
+                let img = document.createElement("div");
+                img.innerHTML = "<img class = Aimg src='Screenshot 2025-06-02 083353.png'>"
+                this.appendChild(img);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("AchievementsCard-Back");
+                this.classList.add("AchievementsCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Publishing My First Game";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsIII = document.getElementsByClassName("cardIII");
+        for(let i = 0; i < cardsIII.length; i++){
+            let card = cardsIII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("AchievementsCard-Front");
+                this.classList.add("AchievementsCard-Back");
+                this.innerHTML = "";
+                let img = document.createElement("div");
+                img.innerHTML = "<img class = Aimg src='Screenshot 2025-06-02 083656.png'>"
+                this.appendChild(img);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("AchievementsCard-Back");
+                this.classList.add("AchievementsCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Making CIAC States in the 500 Freestyle";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsIIII = document.getElementsByClassName("cardIIII");
+        for(let i = 0; i < cardsIIII.length; i++){
+            let card = cardsIIII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("AchievementsCard-Front");
+                this.classList.add("AchievementsCard-Back");
+                this.innerHTML = "";
+                let img = document.createElement("div");
+                img.innerHTML = "<img class = AimgII src='Screenshot 2025-06-02 084602.png'>"
+                this.appendChild(img);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("AchievementsCard-Back");
+                this.classList.add("AchievementsCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Getting an A+ on the Web Final👍";
+                this.appendChild(headrI);
+            });
+        }
+    </script>
+</html>

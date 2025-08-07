@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "GraysonKhalifa.css">
+    </head>
+    <body>
+        <div class = "NavBar">
+            <a class = "NavBarItem" id = "home" href = "GraysonKhalifaMain.html"><img src="c:\Users\grays\Documents\Untitled(3).png"></a>
+            <a class = "NavBarItem" id = "spacer"></a>
+            <a class = "NavBarItem" href = "GraysonKhalifaHobbies.html">Hobbies</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaClasses.html">Classes</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaAchievements.html">Achievements</a>
+            <a class = "NavBarItem" href = "GraysonKhalifaQuestions.html">Questions</a>
+        </div>
+        <div class = "banner"><img src = "c:\Users\grays\Documents\GraysonKhalifaHobbiesBanner.jpg"></div>
+        <hr>
+        <div class = "content">
+            <div class = "wrapper">
+                <div class = "row">
+                    <div class = "card HobbyCard-Front">
+                        <img src = "">
+                        <h1>Swimming</h1>
+                    </div>
+                    <div class = "cardII HobbyCard-FrontI">
+                        <img src = "">
+                        <h1>Game Development</h1>
+                    </div>
+                    <div class = "cardIII HobbyCard-FrontI">
+                        <img src = "">
+                        <h1>Film Making</h1>
+                    </div>
+                    <div class = "cardIIII HobbyCard-FrontI">
+                        <img src = "">
+                        <h1>Golf</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let cards = document.getElementsByClassName("card");
+        for(let i = 0; i < cards.length; i++){
+            let card = cards[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("HobbyCard-Front");
+                this.classList.add("HobbyCard-Back");
+                this.innerHTML = "";
+                let text = document.createElement("div");
+                text.innerHTML = "I have been swimming competitively since I was 8. Since then I have gotten much better and now have practices every day, Monday through Saturday and have a second practice in the morning on Tuesdays and Thursdays. My favorite and best events are the 200 Butterfly and the 500 Freestyle. I also have done the 1500 Butterfly even though it is not a real event. That was extremely fun to do."
+                this.appendChild(text);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("HobbyCard-Back");
+                this.classList.add("HobbyCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Swimming";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsII = document.getElementsByClassName("cardII");
+        for(let i = 0; i < cardsII.length; i++){
+            let card = cardsII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("HobbyCard-Front");
+                this.classList.add("HobbyCard-Back");
+                this.innerHTML = "";
+                let text = document.createElement("div");
+                text.innerHTML = "I started getting interested in game development when I was in elementary school. I started by using scratch, and then used Roblox Studio. I then decided to switch to Unity so that I could publish my games on multiple platforms. I have released one game on itch.io for fun called Egg Man. It is a single player first person shooter based in a kitchen, where you play as an egg who has to shoot zombie rotten eggs that are attacking you."
+                this.appendChild(text);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("HobbyCard-Back");
+                this.classList.add("HobbyCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Game Development";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsIII = document.getElementsByClassName("cardIII");
+        for(let i = 0; i < cardsIII.length; i++){
+            let card = cardsIII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("HobbyCard-Front");
+                this.classList.add("HobbyCard-Back");
+                this.innerHTML = "";
+                let text = document.createElement("div");
+                text.innerHTML = "I have been interested in film making since I was around 6 years old. I started by making little unedited videos with my brother. Over time I learned how to edit videos and use equipment like greenscreens and CGI. I eventually got a camera that I can use to make my videos even better. I have made a few short films so far, but nothing good enough and polished enough to show to the public."
+                this.appendChild(text);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("HobbyCard-Back");
+                this.classList.add("HobbyCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Film Making";
+                this.appendChild(headrI);
+            });
+        }
+        let cardsIIII = document.getElementsByClassName("cardIIII");
+        for(let i = 0; i < cardsIIII.length; i++){
+            let card = cardsIIII[i];
+            card.addEventListener("mouseover", function(){
+                this.classList.remove("HobbyCard-Front");
+                this.classList.add("HobbyCard-Back");
+                this.innerHTML = "";
+                let text = document.createElement("div");
+                text.innerHTML = "I started playing golf when I was 9 or 10 years old. I enjoy playing golf in my free time with friends, even though I am not that good at it."
+                this.appendChild(text);
+            });
+            card.addEventListener("mouseout", function(){
+                this.classList.remove("HobbyCard-Back");
+                this.classList.add("HobbyCard-Front");
+                this.innerHTML = "";
+                let headrI = document.createElement("h1");
+                headrI.innerHTML = "Golf";
+                this.appendChild(headrI);
+            });
+        }
+    </script>
+</html>
